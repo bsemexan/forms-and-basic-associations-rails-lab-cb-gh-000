@@ -6,4 +6,3 @@ class Song < ActiveRecord::Base
   def genre_name=(name)
   end
 end
-
