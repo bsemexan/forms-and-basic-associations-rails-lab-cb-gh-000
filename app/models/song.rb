@@ -22,7 +22,7 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents=(notes)
-end
+  end
 
     def note_contents
     self.notes.map(&:content)
