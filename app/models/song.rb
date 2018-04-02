@@ -20,4 +20,6 @@ class Song < ActiveRecord::Base
   def artist_name
     self.try(:artist).try(:name)
   end
+
+  def note_contents=(notes)
 end
