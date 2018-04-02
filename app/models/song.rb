@@ -16,4 +16,8 @@ class Song < ActiveRecord::Base
     artist = Artist.find_or_create_by(name: name)
     self.artist = artist
   end
+
+  def genre_name
+    self.try(:artist).try(:name)
+  end
 end
